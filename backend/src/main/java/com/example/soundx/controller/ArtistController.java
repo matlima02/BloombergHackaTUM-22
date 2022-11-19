@@ -18,7 +18,7 @@ public class ArtistController {
     @PostMapping("/add")
     public String add(@RequestBody Artist artist){
         artistService.saveArtist(artist);
-        return "New custoer is added!";
+        return "New artist is added!";
     }
 
     @GetMapping("/getAll")

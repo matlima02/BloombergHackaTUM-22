@@ -18,7 +18,7 @@ public class MatchController {
     @PostMapping("/add")
     public String add(@RequestBody Match match){
         matchService.saveMatch(match);
-        return "New custoer is added!";
+        return "New match is added!";
     }
 
     @GetMapping("/getAll")

@@ -18,7 +18,7 @@ public class OrderController {
     @PostMapping("/add")
     public String add(@RequestBody Order order){
         orderService.saveOrder(order);
-        return "New custoer is added!";
+        return "New order is added!";
     }
 
     @GetMapping("/getAll")

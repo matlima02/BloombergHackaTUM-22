@@ -18,7 +18,7 @@ public class CustomerController {
     @PostMapping("/add")
     public String add(@RequestBody Customer customer){
         customerService.saveCustomer(customer);
-        return "New custoer is added!";
+        return "New customer is added!";
     }
 
     @GetMapping("/getAll")
