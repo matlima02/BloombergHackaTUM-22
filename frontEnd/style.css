@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    margin: 0;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: rgb(213, 210, 201);
+    margin-left: 2.5rem;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    background: rgb(13, 16, 16);
+    z-index: 2;
+}
+
+.nav .container {
+    position: absolute;
+    top: 5.5%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.home {
+    height: 100vh;
+}
+
+.home .h1 {
+    font-size: 4rem;
+}
+
+.home .sliding-text {
+    color: rgb(213, 210, 201);
+
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(213, 210, 201);
+}
+
+.cena::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(213, 210, 201);
+    transition: width 0.3s;
+}
+
+.cena:hover::after {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.logo {
+    position: absolute;
+    color: rgb(213, 210, 201);
+    left: 50%;
+    top: 50%;
+    font-size: 1rem;
+    transform: translate(-50%, -50%) scale(6);
+}
+
+.first-page {
+    height: 100vh;
+    position: relative;
+    background: rgb(40, 38, 38);
+    color: rgb(213, 210, 201);
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    text-align: left;
+    justify-content: space-around;
+    z-index: 5;
+}
+
+
+.caixa {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 400%;
+    max-width: 1500px;
+    background: rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    transform: translateY(-250%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border:0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: rgb(213, 210, 201);
+}
+
+.search-bar button img {
+    width: 35px;
+}
+
+.search-bar button {
+    border: 1px;
+    background: transparent;
+    width: 90px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
