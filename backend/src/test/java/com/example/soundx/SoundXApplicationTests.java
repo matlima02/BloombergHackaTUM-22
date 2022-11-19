@@ -1,6 +1,6 @@
-package com.example.soundx;
+package src.test.java.com.example.soundx;
 
-import org.junit.jupiter.api.Test;
+import org.testng.annotations.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest

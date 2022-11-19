@@ -1,10 +1,10 @@
-package com.example.soundx.Specifications;
+package src.main.java.com.example.soundx.Specifications;
 
 
 
-import com.example.soundx.model.Customer;
-import com.example.soundx.model.Order;
-import com.example.soundx.model.Order_;
+import src.main.java.com.example.soundx.model.Customer;
+import src.main.java.com.example.soundx.model.Order;
+import src.main.java.com.example.soundx.model.Order_;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.expression.ExpressionParser;
 import org.springframework.expression.spel.standard.SpelExpressionParser;

@@ -1,9 +1,9 @@
-package com.example.soundx.service;
+package src.main.java.com.example.soundx.service;
 
-import com.example.soundx.model.Artist;
-import com.example.soundx.repository.ArtistRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import src.main.java.com.example.soundx.model.Artist;
+import src.main.java.com.example.soundx.repository.ArtistRepository;
 
 import java.util.List;
 

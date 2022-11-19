@@ -1,4 +1,4 @@
-package com.example.soundx.model;
+package src.main.java.com.example.soundx.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

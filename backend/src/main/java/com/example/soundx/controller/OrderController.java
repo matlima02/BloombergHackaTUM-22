@@ -1,9 +1,10 @@
-package com.example.soundx.controller;
+package src.main.java.com.example.soundx.controller;
 
-import com.example.soundx.model.Order;
-import com.example.soundx.service.OrderService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import src.main.java.com.example.soundx.model.Order;
+import src.main.java.com.example.soundx.service.OrderService;
 
 import java.util.List;
 

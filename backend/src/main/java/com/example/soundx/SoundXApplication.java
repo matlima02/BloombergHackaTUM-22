@@ -1,4 +1,4 @@
-package com.example.soundx;
+package src.main.java.com.example.soundx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

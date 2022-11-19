@@ -1,9 +1,10 @@
-package com.example.soundx.controller;
+package src.main.java.com.example.soundx.controller;
 
-import com.example.soundx.model.Match;
-import com.example.soundx.service.MatchService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import src.main.java.com.example.soundx.model.Match;
+import src.main.java.com.example.soundx.service.MatchService;
 
 import java.util.List;
 

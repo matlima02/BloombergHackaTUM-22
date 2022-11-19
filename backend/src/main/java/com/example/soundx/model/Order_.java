@@ -1,4 +1,4 @@
-package com.example.soundx.model;
+package src.main.java.com.example.soundx.model;
 
 import javax.annotation.processing.Generated;
 import javax.persistence.metamodel.SingularAttribute;
