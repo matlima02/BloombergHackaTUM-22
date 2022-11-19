@@ -3,13 +3,13 @@ stockCounter = 0;
 
 //an Artist would also be qualified as an User first and foremost: Java stuff
 class Artist extends User{
-    constructor(artistName, projects){
+    /*constructor(artistName, projects){
         super(this.firstName,this.lastName,this.amount);
         this.artistName = artistName;
         this.projects = [];
         id = counter;
         counter++;
-    }
+    }*/
 }
 
 class Projects{
@@ -27,7 +27,7 @@ class User{
         this.firstName = firstName;
         this.lastName = lastName;
         this.amount = amount;
-        stocksOwned = [];
+        //stocksOwned = [];
     }
 }
 
@@ -35,15 +35,15 @@ class StockObj{
     constructor(artist, value){
         this.artist = artist;
         this.value = value;
-        stockId = stockCounter;
+        //stockId = stockCounter;
         stockCounter++;
     }
 }
 
 class Market{
     constructor(){
-        usersOnTheMarket = [];
-        stocksOnTheMarket = [];
+        /*usersOnTheMarket = [];
+        stocksOnTheMarket = [];*/
     }
 }
 
