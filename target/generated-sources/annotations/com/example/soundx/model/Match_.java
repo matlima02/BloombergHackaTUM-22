@@ -12,7 +12,7 @@ public abstract class Match_ {
 	public static volatile SingularAttribute<Match, Integer> id;
 	public static volatile SingularAttribute<Match, Integer> matchCustomerId;
 	public static volatile SingularAttribute<Match, Integer> matchedAmount;
-	public static volatile SingularAttribute<Match, Integer> matchedPrice;
+	public static volatile SingularAttribute<Match, Double> matchedPrice;
 
 	public static final String MATCH_ARTIST_ID = "matchArtistId";
 	public static final String ID = "id";

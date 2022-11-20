@@ -1,4 +1,4 @@
-package src.main.java.com.example.soundx.model;
+package com.example.soundx.model;
 import javax.persistence.*;
 
 @Entity
@@ -10,7 +10,7 @@ public class Match {
     private int matchCustomerId;
     private int matchArtistId;
     private int matchedAmount;
-    private int matchedPrice;
+    private double matchedPrice;
 
     public Match() {
     }
@@ -48,11 +48,11 @@ public class Match {
         this.matchedAmount = matchedAmount;
     }
 
-    public int getMatchedPrice() {
+    public double getMatchedPrice() {
         return matchedPrice;
     }
 
-    public void setMatchedPrice(int matchedPrice) {
+    public void setMatchedPrice(double matchedPrice) {
         this.matchedPrice = matchedPrice;
     }
 }

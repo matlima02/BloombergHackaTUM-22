@@ -1,12 +1,14 @@
-package src.main.java.com.example.soundx.service;
+package com.example.soundx.service;
 
 
 
+import com.example.soundx.Specifications.OrderSpecification;
+import com.example.soundx.model.Order;
+import com.example.soundx.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
-import src.main.java.com.example.soundx.Specifications.OrderSpecification;
-import src.main.java.com.example.soundx.model.Order;
-import src.main.java.com.example.soundx.repository.OrderRepository;
+
 
 
 import java.util.List;
@@ -30,13 +32,28 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public Order findMatchForOrder(Order order) {
-        List<Order> l = orderRepository.findAll(OrderSpecification.isMatchingOrder(order));
+        Specification<Order> o = new OrderSpecification(order);
+        List<Order> l = orderRepository.findAll(o);
         if(l.size()>1) {
-            return l.stream().reduce((a, b)->a.getPrice()<b.getPrice() ? a:b).get();
+            //Get best offer for buyer/seller
+            if(order.getType().equals("SELL")) {
+                return l.stream().reduce((a, b)->a.getPrice()>b.getPrice() ? a:b).get();
+            }
+            else {
+                return l.stream().reduce((a, b)->a.getPrice()<b.getPrice() ? a:b).get();
+            }
+
         } else if (l.isEmpty()) {
             return null;
         } else {
             return l.get(0);
         }
+    }
+
+    @Override
+    public void deleteOrder(int id) {
+        Order o = orderRepository.findById(id).orElseThrow();
+        orderRepository.delete(o);
+        return ;
     }
 }

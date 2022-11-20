@@ -1,6 +1,7 @@
-package src.main.java.com.example.soundx.service;
+package com.example.soundx.service;
 
-import src.main.java.com.example.soundx.model.Match;
+
+import com.example.soundx.model.Match;
 
 import java.util.List;
 

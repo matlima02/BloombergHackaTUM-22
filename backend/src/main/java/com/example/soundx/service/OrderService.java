@@ -1,8 +1,9 @@
-package src.main.java.com.example.soundx.service;
+package com.example.soundx.service;
 
 
 
-import src.main.java.com.example.soundx.model.Order;
+
+import com.example.soundx.model.Order;
 
 import java.util.List;
 
@@ -11,4 +12,6 @@ public interface OrderService {
     public List<Order> getAllOrders();
 
     public Order findMatchForOrder(Order order);
+
+    public void deleteOrder(int id);
 }

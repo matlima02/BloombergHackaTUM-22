@@ -1,11 +1,10 @@
-package src.main.java.com.example.soundx.controller;
+package com.example.soundx.controller;
 
 
+import com.example.soundx.model.Artist;
+import com.example.soundx.service.ArtistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import src.main.java.com.example.soundx.model.Artist;
-import src.main.java.com.example.soundx.service.ArtistService;
-
 import java.util.List;
 
 @RestController
